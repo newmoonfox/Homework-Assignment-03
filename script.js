@@ -20,17 +20,22 @@ function generatePassword() {
 }
 // Adding Conditional Statements + confirms
 // Confirm boxes for character types used in password
-var numbers = confirm('Would you like numbers in your password?');
-if (numbers === true) {
+var numberSet = confirm('Would you like numbers in your password?');
+if (numberSet === true) {
   characterSet = numberSet + characterSet;
 }
-var upperCase = confirm('Would you like uppercase letters in your password?');
-if (upperCase === true) {
+var specialCharacters = confirm('Would you like special characters in your passwork?');
+if (specialCharacters === true) {
+  characterSet = specialCharacters + characterSet;
+}
+
+var upperCaseCharacters = confirm('Would you like uppercase letters in your password?');
+if (upperCaseCharacters === true) {
   characterSet = upperCaseCharacters + characterSet;
 }
 
-var lowerCase = confirm('Would you like lowercase letters in your password?');
-if (lowerCase === true) {
+var lowerCaseCharacters = confirm('Would you like lowercase letters in your password?');
+if (lowerCaseCharacters === true) {
   characterSet = lowerCaseCharacters + characterSet;
 }
 
