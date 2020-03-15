@@ -13,13 +13,10 @@ function generatePassword() {
   // ----------------------------------------------------------------------------------------------------------
   // Creating Password lengths
   var choices = prompt("How many characters would you like in your password? :D");
-  parseInt(choices, 15)
+  parseInt(choices, 10)
   if (choices < 8 || choices > 128) {
     alert("Password length should be 8-128 characters. Please try again. :(");
     prompt("How many characters do you want in your password?");
-  }
-  else {
-    alert("You have chosen a password of " + choices + "characters.");
   }
 
   // ----------------------------------------------------------------------------------------------------------
@@ -29,7 +26,7 @@ function generatePassword() {
   if (numbers === true) {
     characterSet = numberSet + characterSet;
   }
-  var special = confirm('Would you like special characters in your passwork?');
+  var special = confirm('Would you like special characters in your password?');
   if (special === true) {
     characterSet = specialSymbols + characterSet;
   }
