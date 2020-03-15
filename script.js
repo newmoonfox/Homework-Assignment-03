@@ -1,6 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-// -----------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------
 
 // Creating a function to generate a password and then adding variables within function for passwords
 function generatePassword() {
@@ -10,7 +10,7 @@ function generatePassword() {
   var lowerCaseAlpha = 'abcdefghijklmnopqrstuvwxyz';
   var characterSet = '';
   var password = '';
-
+  // ----------------------------------------------------------------------------------------------------------
   // Creating Password lengths
   var choices = prompt("How many characters would you like in your password? :D");
   parseInt(choices, 15)
@@ -22,6 +22,7 @@ function generatePassword() {
     alert("You have chosen a password of " + choices + "characters.");
   }
 
+  // ----------------------------------------------------------------------------------------------------------
   // Adding Conditional Statements + confirms
   // Confirm boxes for character types used in password
   var numbers = confirm('Would you like numbers in your password?');
@@ -42,12 +43,15 @@ function generatePassword() {
   if (lowerCase === true) {
     characterSet = lowerCaseAlpha + characterSet;
   }
+  // ---------------------------------------------------------------------------------------------------------
   // Using a forloop and math.floor to create random passwords
   for (var i = 0; i < choices; i++) {
     var password = password + characterSet[Math.floor(Math.random() * characterSet.length)];
   }
   return password;
 }
+
+// ------------------------------------------------------------------------------------------------------------
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 // Write password to the #password input
