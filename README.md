@@ -12,4 +12,4 @@ Executing assignment:
  
 3. For the user to have more choices for their generated password, I repeated the (if) statements and (confirms) for the rest of the variables: lowerCaseAlpha, upperCaseAlpha, specialSymbols, and numberSet.
 
-4. I used a for loop (to avoid running the same code over again) and math.floor to create the permeations of passwords which depended on the variables of the password
+4. I used a for loop (to avoid running the same code over again) and math.floor to create the permeations of passwords which depended on the variables of the password.
